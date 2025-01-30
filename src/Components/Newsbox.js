@@ -10,7 +10,7 @@ function Newsbox(props) {
         const fetchNews = async () => {
             try {
                 // Fetching data from an API
-                let response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${process.env.REACT_APP_API_KEY}&page=${pageno}`);
+                let response = await fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${process.env.REACT_APP_API_KEY}&page=${pageno}`);
                 console.log(process.env.REACT_APP_API_KEY);
 
                 console.log(props.category);
