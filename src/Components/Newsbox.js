@@ -10,7 +10,7 @@ function Newsbox(props) {
         const fetchNews = async () => {
             try {
                 // Fetching data from an API
-                let response = await fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${process.env.REACT_APP_API_KEY}&page=${pageno}`);
+                let response= await fetch(`https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${process.env.REACT_APP_API_KEY}&page=${pageno}`)
                 console.log(process.env.REACT_APP_API_KEY);
 
                 console.log(props.category);
@@ -48,7 +48,7 @@ function Newsbox(props) {
             articles.map((article,index)=>{
                 return (
                 
-                <Newsinfo key={index} ims={article.urlToImage} des={article.description} url={article.url} title={article.title} />
+                <Newsinfo key={index} ims={article.image} des={article.description} url={article.url} title={article.title} />
                 )
             })
         }

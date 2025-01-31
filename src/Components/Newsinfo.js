@@ -1,8 +1,11 @@
 import React from 'react'
 
 function Newsinfo(props) {
+  console.log(props);
+  
   return (
     <>
+    
       <div className="cards border-4 border-sky-900 m-6 inline-block px-7 py-7">
         <div className="img">
 
