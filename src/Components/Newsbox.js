@@ -10,7 +10,11 @@ function Newsbox(props) {
         const fetchNews = async () => {
             try {
                 // Fetching data from an API
+<<<<<<< HEAD
                 let response= await fetch(`https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${process.env.REACT_APP_API_KEY}&page=${pageno}`)
+=======
+                let response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${process.env.REACT_APP_API_KEY}&page=${pageno}`);
+>>>>>>> d5d8d3571c699920520c242aa05ce2b9c23202cf
                 console.log(process.env.REACT_APP_API_KEY);
 
                 console.log(props.category);
