@@ -4,7 +4,7 @@ function Navbar(props) {
 	return (
 		<>
 			<div className="navbar flex justify-between items-center bg-red-700 text-white fixed top-0 left-0 w-full z-10 px-4 py-3 shadow-lg">
-				<div className="logo text-2xl font-bold">NewsInfo - world news in world language</div>
+				<div className="logo text-2xl font-bold">NewsInfo</div>
 				<ul className="flex items-center gap-6">
 					<li
 						onClick={() => {
